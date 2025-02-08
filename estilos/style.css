@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    background-color: purple;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 516px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: height 0.3s, width 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login div#imagem {
+    background: white url(../imagens/metal.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+section#login div#formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section#login div#formulario p {
+    font-size: 0.8rem;
+    
+}
+
+section#login div#formulario div.campo {
+    height: 40px;
+    width: 100%;
+    background-color: purple;
+    margin: 5px 0px;
+    border-radius: 8px;
+    border: 2px solid purple;
+}
+
+section#login div#formulario div.campo label span {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
+    width: 40px;
+    color: white;
+    font-variation-settings: 'FILL' 1;
+}
+
+section#login div#formulario div.campo input {
+    height: 100%;
+    width: calc(100% - 45px);
+    border-radius: 8px;
+    border: none;
+    background-color: aquamarine;
+    transform: translateY(-13px);
+}
+
+section#login div#formulario div.campo input:focus-within {
+    background-color: white;
+    border: none;
+}
+
+section#login div#formulario input[type="submit"] {
+    display: block;
+    background-color: rgb(91, 180, 150);
+    color: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+section#login div#formulario input[type="submit"]:hover {
+    background-color: rgb(70, 139, 116);
+}
+
+section#login div#formulario form > a.botao {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(70, 139, 116);
+    color: rgb(53, 105, 88);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+section#login div#formulario form > a.botao:hover {
+    background-color: rgb(170, 223, 205);
+}
+
+section#login div#formulario form > a.botao > span {
+    
+    font-size: 0.9rem;
+    font-variation-settings: 'FILL' 1;
+}
