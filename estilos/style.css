@@ -11,7 +11,7 @@ html, body {
     height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
-    background-color: purple;
+    background-color: #5f2c82;
 }
 
 main {
@@ -26,7 +26,7 @@ section#login {
     width: 250px;
     height: 516px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -36,6 +36,7 @@ section#login {
 }
 
 section#login div#imagem {
+    display: block;
     background: white url(../imagens/metal.jpg) no-repeat bottom;
     background-size: cover;
     height: 200px;
@@ -59,10 +60,10 @@ section#login div#formulario p {
 section#login div#formulario div.campo {
     height: 40px;
     width: 100%;
-    background-color: purple;
+    background-color: #5f2c82;
     margin: 5px 0px;
     border-radius: 8px;
-    border: 2px solid purple;
+    border: 2px solid #5f2c82;
 }
 
 section#login div#formulario div.campo label span {
@@ -80,7 +81,8 @@ section#login div#formulario div.campo input {
     border-radius: 8px;
     border: none;
     background-color: aquamarine;
-    transform: translateY(-13px);
+    font-size: 0.9rem;
+    transform: translateY(-12px);
 }
 
 section#login div#formulario div.campo input:focus-within {
@@ -97,6 +99,7 @@ section#login div#formulario input[type="submit"] {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 section#login div#formulario input[type="submit"]:hover {
